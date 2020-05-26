@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "XORXmeFiDcVyBPKe5TZwjxuln0VU9qpjA13DAEXYnS4wYB1hKVHJQ7cj5PQtOHzWOwODjvB+vSN/Ip0EwrHNBQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Felipe\\Desktop\\study\\Aditum\\Finder\\Finder.Application.Services\\Finder.Application.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Felipe\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Felipe\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
