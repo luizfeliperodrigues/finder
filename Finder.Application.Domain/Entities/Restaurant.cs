@@ -6,22 +6,22 @@ namespace Finder.Application.Domain.Entities
     {
         public string Name { get; set; }
 
-        public TimeSpan IsOpenedAt { get; set; }
+        public TimeSpan OpensAt { get; set; }
 
-        public TimeSpan IsClosedAt { get; set; }
+        public TimeSpan ClosesAt { get; set; }
 
         public Restaurant(){}
 
-        public Restaurant(string name, TimeSpan isOpenedAt, TimeSpan isClosedAt) : this()
+        public Restaurant(string name, TimeSpan opensAt, TimeSpan closesAt) : this()
         {
             Name = name;
-            IsOpenedAt = isOpenedAt;
-            IsClosedAt = isClosedAt;
+            OpensAt = opensAt;
+            ClosesAt = closesAt;
         }
 
-        public bool IsOpen(TimeSpan timeChecking)
+        public bool IsOpen(TimeSpan time)
         {
-            return (timeChecking >= IsOpenedAt && timeChecking <= IsClosedAt);
+            return (time >= OpensAt && time <= ClosesAt);
         }
     }
 }
