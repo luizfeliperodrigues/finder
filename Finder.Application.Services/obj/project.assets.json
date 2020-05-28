@@ -82,14 +82,14 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "Finder.Application.Domain/1.0.0": {
+      "Finder.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
-          "bin/placeholder/Finder.Application.Domain.dll": {}
+          "bin/placeholder/Finder.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Finder.Application.Domain.dll": {}
+          "bin/placeholder/Finder.Domain.dll": {}
         }
       }
     }
@@ -411,16 +411,16 @@
         "version.txt"
       ]
     },
-    "Finder.Application.Domain/1.0.0": {
+    "Finder.Domain/1.0.0": {
       "type": "project",
-      "path": "../Finder.Application.Domain/Finder.Application.Domain.csproj",
-      "msbuildProject": "../Finder.Application.Domain/Finder.Application.Domain.csproj"
+      "path": "../Finder.Domain/Finder.Domain.csproj",
+      "msbuildProject": "../Finder.Domain/Finder.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "CsvHelper >= 15.0.5",
-      "Finder.Application.Domain >= 1.0.0",
+      "Finder.Domain >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -454,8 +454,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Felipe\\Desktop\\study\\Aditum\\Finder\\Finder.Application.Domain\\Finder.Application.Domain.csproj": {
-              "projectPath": "C:\\Users\\Felipe\\Desktop\\study\\Aditum\\Finder\\Finder.Application.Domain\\Finder.Application.Domain.csproj"
+            "C:\\Users\\Felipe\\Desktop\\study\\Aditum\\Finder\\Finder.Domain\\Finder.Domain.csproj": {
+              "projectPath": "C:\\Users\\Felipe\\Desktop\\study\\Aditum\\Finder\\Finder.Domain\\Finder.Domain.csproj"
             }
           }
         }

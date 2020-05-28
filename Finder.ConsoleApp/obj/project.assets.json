@@ -23,28 +23,28 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Finder.Application.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/Finder.Application.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Finder.Application.Domain.dll": {}
-        }
-      },
       "Finder.Application.Services/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "CsvHelper": "15.0.5",
-          "Finder.Application.Domain": "1.0.0"
+          "Finder.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Finder.Application.Services.dll": {}
         },
         "runtime": {
           "bin/placeholder/Finder.Application.Services.dll": {}
+        }
+      },
+      "Finder.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Finder.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Finder.Domain.dll": {}
         }
       }
     }
@@ -138,15 +138,15 @@
         "version.txt"
       ]
     },
-    "Finder.Application.Domain/1.0.0": {
-      "type": "project",
-      "path": "../Finder.Application.Domain/Finder.Application.Domain.csproj",
-      "msbuildProject": "../Finder.Application.Domain/Finder.Application.Domain.csproj"
-    },
     "Finder.Application.Services/1.0.0": {
       "type": "project",
       "path": "../Finder.Application.Services/Finder.Application.Services.csproj",
       "msbuildProject": "../Finder.Application.Services/Finder.Application.Services.csproj"
+    },
+    "Finder.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Finder.Domain/Finder.Domain.csproj",
+      "msbuildProject": "../Finder.Domain/Finder.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {

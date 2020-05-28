@@ -2,10 +2,13 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+  
   <ItemGroup>
-    <ProjectReference Include="..\Finder.Application.Domain\Finder.Application.Domain.csproj"/>
+    <PackageReference Include="CsvHelper" Version="15.0.5" />
   </ItemGroup>
+  
   <ItemGroup>
-    <PackageReference Include="CsvHelper" Version="15.0.5"/>
+    <ProjectReference Include="..\Finder.Domain\Finder.Domain.csproj" />
   </ItemGroup>
+
 </Project>

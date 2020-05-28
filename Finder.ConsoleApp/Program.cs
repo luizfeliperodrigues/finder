@@ -14,22 +14,16 @@ namespace Finder.ConsoleApp
 
                 if(String.IsNullOrEmpty(horario) || String.IsNullOrWhiteSpace(horario))
                 {
-                    throw new ArgumentNullException();
+                    throw new ArgumentNullException("Horario inserido invalido.");
                 }
 
-                string filePath = @"C:\Users\Felipe\Desktop\study\Aditum\restaurant-hours - Populated.csv";
+                string filePath = @"C:\Users\Felipe\Desktop\study\Aditum\restaurant-hours.csv";
 
-                FinderService finderService = new FinderService();
+                IFinderService finderService = new FinderService();
 
-                List<string> result = finderService.GetOpenedRestaurants(horario, filePath);
+                List<string> openedRestaurantNames = finderService.GetOpenedRestaurants(horario, filePath);
 
-                foreach (var restaurant in result)
-                {
-                    Console.WriteLine(restaurant);
-                }
-
-                // Console.WriteLine(result.Count);
-
+                Console.WriteLine("[{0}]", String.Join(", ", openedRestaurantNames.ToArray()));
             }
             catch(ArgumentNullException error)
             {
@@ -37,7 +31,7 @@ namespace Finder.ConsoleApp
             }
             catch (System.Exception error)
             {
-                Console.WriteLine($"Error: {error.Message}");
+                Console.WriteLine($"Error: {error.StackTrace}");
             }
         }
     }
