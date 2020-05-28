@@ -13,49 +13,68 @@ namespace Finder.Application.Services
     {
         public List<Restaurant> Parse(string filePath)
         {
-            if(!File.Exists(filePath))
+            try
             {
-                throw new FileNotFoundException("Arquivo não encontrado.");
-            }
+                List<Restaurant> restaurants = new List<Restaurant>();
+                string lineContent;
+                var csvConfiguration = new CsvConfiguration(CultureInfo.InvariantCulture);
+                csvConfiguration.HasHeaderRecord = true;
+                csvConfiguration.BadDataFound = null;
 
-            List<Restaurant> restaurants = new List<Restaurant>();
-            string lineContent;
-            var csvConfiguration = new CsvConfiguration(CultureInfo.InvariantCulture);
-            csvConfiguration.HasHeaderRecord = true;
-
-            using (StreamReader fileReader = File.OpenText(filePath))
-            {
-                using(var csvFile = new CsvReader(fileReader, csvConfiguration))
+                using (StreamReader fileReader = File.OpenText(filePath))
                 {
-                    while(csvFile.Read()) 
+                    using(var csvFile = new CsvReader(fileReader, csvConfiguration))
                     {
-                        for(int i=0; csvFile.TryGetField<string>(i, out lineContent); i++)
+                        while(csvFile.Read()) 
                         {
-                            if (IsHeader(lineContent))
+                            for(int i=0; csvFile.TryGetField<string>(i, out lineContent); i++)
                             {
-                                continue;
+                                if (IsHeader(lineContent))
+                                {
+                                    continue;
+                                }
+
+                                var restaurant = this.MapToRestaurant(lineContent);
+                                restaurants.Add(restaurant);
                             }
-                            var restaurant = this.MapToRestaurant(lineContent);
-                            restaurants.Add(restaurant);
                         }
                     }
                 }
-            }
 
-            return restaurants;
+                return restaurants;
+            }
+            catch (FileNotFoundException)
+            {
+                throw new FileNotFoundException("Arquivo não encontrado.");
+            }
+            catch(System.Exception)
+            {
+                throw new Exception("Problema no parse do csv para restaurante.");
+            }
         }
 
         public Restaurant MapToRestaurant(string restaurant)
         {
-            string restaurantName = restaurant.Split(';')[0];
+            try
+            {
+                string restaurantName = restaurant.Split(';')[0];
             
-            string openingHours = restaurant.Split(';')[1];
+                string openingHours = restaurant.Split(';')[1];
 
-            string openingTime = openingHours.Split('-')[0];
+                string openingTime = openingHours.Split('-')[0];
 
-            string closingTime = openingHours.Split('-')[1];
+                string closingTime = openingHours.Split('-')[1];
 
-            return new Restaurant(restaurantName, TimeSpan.Parse(openingTime), TimeSpan.Parse(closingTime));
+                return new Restaurant(restaurantName, TimeSpan.Parse(openingTime), TimeSpan.Parse(closingTime));
+            }
+            catch (ArgumentException)
+            {
+                throw new ArgumentException("Um dos registros do csv está corrompido.");
+            }
+            catch(System.Exception)
+            {
+                throw new Exception("Problema em mapear o restaurante.");
+            }
         }
 
         public static bool IsHeader(string content)
