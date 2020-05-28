@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "3N2H16fojJXUst91UT9Bl3VigIBAL7KAKgbGVEBVj6IcQpGupLfc2lr+9oFoC5rmyiGeQvvnQdR3CRB+CneBjw==",
+  "dgSpecHash": "bBBAlwcBVvvCkBQZ4RWYLjv8CupSAfIrK3e5GuNIJ9C6ijHE2vqcVmeyWEYnTArO+gNQx7rpJD3S8g51g5fLMQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Felipe\\Desktop\\study\\Aditum\\Finder\\Finder.ConsoleApp\\Finder.ConsoleApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Felipe\\.nuget\\packages\\csvhelper\\15.0.5\\csvhelper.15.0.5.nupkg.sha512",
+    "C:\\Users\\Felipe\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }
