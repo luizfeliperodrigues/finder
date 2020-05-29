@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finder.Domain", "Finder.Dom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finder.Application.Services", "Finder.Application.Services\Finder.Application.Services.csproj", "{0B1D7C41-E30C-4B95-8C99-C9576BBB190E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finder.Domain.Tests", "Finder.Domain.Tests\Finder.Domain.Tests.csproj", "{EAACCCE2-EECD-43E3-AEE9-A16B15321D61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{0B1D7C41-E30C-4B95-8C99-C9576BBB190E}.Release|x64.Build.0 = Release|Any CPU
 		{0B1D7C41-E30C-4B95-8C99-C9576BBB190E}.Release|x86.ActiveCfg = Release|Any CPU
 		{0B1D7C41-E30C-4B95-8C99-C9576BBB190E}.Release|x86.Build.0 = Release|Any CPU
+		{EAACCCE2-EECD-43E3-AEE9-A16B15321D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAACCCE2-EECD-43E3-AEE9-A16B15321D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAACCCE2-EECD-43E3-AEE9-A16B15321D61}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EAACCCE2-EECD-43E3-AEE9-A16B15321D61}.Debug|x64.Build.0 = Debug|Any CPU
+		{EAACCCE2-EECD-43E3-AEE9-A16B15321D61}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EAACCCE2-EECD-43E3-AEE9-A16B15321D61}.Debug|x86.Build.0 = Debug|Any CPU
+		{EAACCCE2-EECD-43E3-AEE9-A16B15321D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAACCCE2-EECD-43E3-AEE9-A16B15321D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAACCCE2-EECD-43E3-AEE9-A16B15321D61}.Release|x64.ActiveCfg = Release|Any CPU
+		{EAACCCE2-EECD-43E3-AEE9-A16B15321D61}.Release|x64.Build.0 = Release|Any CPU
+		{EAACCCE2-EECD-43E3-AEE9-A16B15321D61}.Release|x86.ActiveCfg = Release|Any CPU
+		{EAACCCE2-EECD-43E3-AEE9-A16B15321D61}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
