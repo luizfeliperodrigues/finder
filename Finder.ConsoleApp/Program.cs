@@ -21,14 +21,15 @@ namespace Finder.ConsoleApp
                 {
                     throw new ArgumentException("Horario inserido invalido.");
                 }
-
-                string filePath = @"C:\Users\Felipe\Desktop\study\Aditum\restaurant-hours-erroRestaurante.csv";
+                
+                Console.Write("Digite o caminho do arquivo CSV? ");
+                string filePath = Console.ReadLine();
 
                 IFinderService finderService = new FinderService();
 
-                List<string> openedRestaurantNames = finderService.GetOpenedRestaurants(time, filePath);
+                List<string> avaiableRestaurantNames = finderService.GetAvailableRestaurants(time, filePath);
 
-                Console.WriteLine("[{0}]", String.Join(", ", openedRestaurantNames.ToArray()));
+                Console.WriteLine("[{0}]", String.Join(", ", avaiableRestaurantNames.ToArray()));
             }
             catch(ArgumentException error)
             {

@@ -45,7 +45,7 @@ namespace Finder.Application.Services
             }
             catch (FileNotFoundException)
             {
-                throw new FileNotFoundException("Arquivo não encontrado.");
+                throw new FileNotFoundException("Arquivo não encontrado ou caminho invalido.");
             }
             catch(System.Exception)
             {
@@ -53,7 +53,7 @@ namespace Finder.Application.Services
             }
         }
 
-        public Restaurant MapToRestaurant(string restaurant)
+        private Restaurant MapToRestaurant(string restaurant)
         {
             try
             {
@@ -77,14 +77,7 @@ namespace Finder.Application.Services
             }
         }
 
-        public static bool IsHeader(string content)
-        {
-            if(content.ToLower().Contains("restaurantname") && content.ToLower().Contains("openhours"))
-            {
-                return true;
-            }
-
-            return false;
-        }
+        private bool IsHeader(string content) => (content.ToLower().Contains("restaurantname") && content.ToLower().Contains("openhours"));
+        
     }
 }

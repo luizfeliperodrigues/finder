@@ -17,7 +17,7 @@ namespace Finder.Application.Services
             this.csvParser = new CsvParser();
         }
 
-        public List<string> GetOpenedRestaurants(string time, string csvPath)
+        public List<string> GetAvailableRestaurants(string time, string csvPath)
         {
             List<Restaurant> restaurants = csvParser.Parse(csvPath);
 

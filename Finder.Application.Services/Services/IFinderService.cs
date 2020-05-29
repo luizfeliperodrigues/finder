@@ -4,6 +4,6 @@ namespace Finder.Application.Services
 {
     public interface IFinderService
     {
-         List<string> GetOpenedRestaurants(string hora, string csvPath);
+         List<string> GetAvailableRestaurants(string hora, string csvPath);
     }
 }
