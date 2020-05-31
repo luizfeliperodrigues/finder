@@ -24,6 +24,9 @@ Responsável por validação dos dados de entrada e também pela padronização 
 
 ### Referencias
 .Net Core v3.1
+
 CsvHelper v15.0.5
+
 XUnit v2.4.0
+
 FluentAssertions v5.10.3
