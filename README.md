@@ -5,7 +5,7 @@ O nome Finder se dá pelo fato da aplicação poder expandir para encontrar outr
 
 A arquitetura utilizada foi DDD para que a solução seja o menos acoplada possível e que sua manutenção e escalabilidade se tornem viáveis.
 
-A solução possui 3 cadamadas: Domain, Application Services e ConsoleApp.
+A solução possui 3 camadas: Domain, Application Services e ConsoleApp.
 
 ### Domain
 Camada responsável pelas regras de negocio da aplicação, que nesse caso é representado pela classe Restaurant e os serviços que aquele restaurante pode oferecer, implementando a interface IRestaurantService.
