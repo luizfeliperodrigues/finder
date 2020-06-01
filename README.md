@@ -1,7 +1,9 @@
 # Finder
 Finder é uma solução ConsoleApp para encontrar restaurantes disponíveis, dado uma hora especificada e um arquivo CSV com todos restaurantes cadastrados.
 
-A arquitetura utilizada para essa solução é que seja o menos acoplada possível e que sua manutenção e escalabilidade se tornem mais viáveis.
+O nome Finder se dá pelo fato da aplicação poder expandir para encontrar outros tipos de estabelecimentos, assim como encontrar outros tipos de disponibilidades.
+
+A arquitetura utilizada foi DDD para que a solução seja o menos acoplada possível e que sua manutenção e escalabilidade se tornem viáveis.
 
 A solução possui 3 cadamadas: Domain, Application Services e ConsoleApp.
 
@@ -21,6 +23,8 @@ Foi feita a leitura dos arquivos CSV com a ajuda da biblioteca CsvHelper.
 Seria a camada responsável pela comunicação usuário ou aplicação que possa consumir Finder.
 
 Responsável por validação dos dados de entrada e também pela padronização de resposta quando o caminho ótimo é seguido.
+
+No folder CSV Demo há alguns exemplos de arquivos csv, sendo o "restaurant-hours.csv" o padrão para o caminho ótimo da aplicação e os outros para verificação de performance ou csv's corrompidos para tratamento de erros.
 
 ### Referencias
 .Net Core v3.1
