@@ -87,35 +87,11 @@ namespace Finder.Domain.Tests
                 )
             };
 
-            List<Restaurant> expected = new List<Restaurant>
-            {
-                new Restaurant( 
-                    "Restaurante 1",
-                    new TimeSpan(9,0,0),
-                    new TimeSpan(18,0,0)
-                ),
-                new Restaurant( 
-                    "Restaurante 2",
-                    new TimeSpan(11,0,0),
-                    new TimeSpan(22,0,0)
-                ),
-                new Restaurant( 
-                    "Restaurante 3",
-                    new TimeSpan(7,0,0),
-                    new TimeSpan(15,0,0)
-                ),
-                new Restaurant( 
-                    "Restaurante 5",
-                    new TimeSpan(10,0,0),
-                    new TimeSpan(22,0,0)
-                )
-            };
-
             TimeSpan timeTest = new TimeSpan(12,0,0);
 
             var actual = this.restaurantService.GetAvailableRestaurants(timeTest, restaurantsTested);
 
-            Assert.Equal(expected.Count, actual.Count);
+            Assert.Equal(4, actual.Count);
         }
 
         [Fact]

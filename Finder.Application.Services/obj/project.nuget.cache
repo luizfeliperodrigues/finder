@@ -1,16 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "bGlNOQ/44ouD7zC67IU23h+aXikodBcOyIgASOxZeAEs8Pk15qTqcI1TqGmF/ZNDtwaq0ZoZnWLfLvhNphdyoA==",
+  "dgSpecHash": "EBMCAUn3/4nYHE1U7fVYHULzbJwQdGR7eR+jH+7pYROw1HKq0qtHoopqAWFEbu6Eoi1ZpOmQDQs2Tpd2vlCWiQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Felipe\\Desktop\\study\\Aditum\\Finder\\Finder.Application.Services\\Finder.Application.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Felipe\\.nuget\\packages\\csvhelper\\15.0.5\\csvhelper.15.0.5.nupkg.sha512",
-    "C:\\Users\\Felipe\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
-    "C:\\Users\\Felipe\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
-    "C:\\Users\\Felipe\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Felipe\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Felipe\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
-    "C:\\Users\\Felipe\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512"
+    "C:\\Users\\Felipe\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }
